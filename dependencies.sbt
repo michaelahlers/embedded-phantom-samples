@@ -1,3 +1,5 @@
+resolvers += "Ahlers Consulting" at "http://artifacts.ahlers.consulting"
+
 val versionScalaTest = "(,2.3["
 
 /**
