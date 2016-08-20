@@ -1,0 +1,23 @@
+language: scala
+
+dist: trusty
+sudo: required
+
+os:
+- linux
+
+jdk:
+- openjdk7
+- oraclejdk7
+- oraclejdk8
+
+script:
+- sbt it:test
+# Following recommendations from http://scala-sbt.org/1.0/docs/Travis-CI-with-sbt.html.
+- find $HOME/.sbt -name "*.lock" | xargs rm
+- find $HOME/.ivy2 -name "ivydata-*.properties" | xargs rm
+
+cache:
+  directories:
+  - $HOME/.ivy2/cache
+  - $HOME/.sbt/boot/
