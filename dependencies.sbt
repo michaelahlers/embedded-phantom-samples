@@ -7,8 +7,8 @@ val versionScalaTest = "(,2.3["
  */
 libraryDependencies ++=
   "ch.qos.logback" % "logback-classic" % "1.1.7" ::
-    "consulting.ahlers" % "embedded-phantom" % "0.9.6-SNAPSHOT" ::
-    ("consulting.ahlers" % "embedded-phantom" % "0.9.6-SNAPSHOT" classifier "it") ::
+    "consulting.ahlers" % "embedded-phantom" % "1.0.0" ::
+    ("consulting.ahlers" % "embedded-phantom" % "1.0.0" classifier "it") ::
     Nil
 
 /**
